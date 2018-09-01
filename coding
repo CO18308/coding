@@ -1,0 +1,148 @@
+#include<stdio.h>
+#include<stdlib.h>
+char _ch[]={'b','a','c','d','a','d','a','b','d','d','a','b','c','b','a','\0'};
+int amt=0;
+void assign(char);
+int i=0;// Global variables
+int main()
+{char z;//Local variable
+char name[20];
+          printf("WELCOME TO THE KAUN BANEGA CROREPATI(KBC)!!!\n"); 
+
+                    printf("ENTER THE GAME ZONE***\n");
+         printf("ENTER YOUR NAME\n");
+     scanf("%s",&name);
+               printf("NAME OF THE PLAYER:%s\n",name);
+               printf("PLAY THE GAME\n");
+          printf("YOUR FIRST QUESTION IS\n");
+  printf("Which of the following gods is also known as Gauri Nandan?\n");
+              printf("a) Agni     b) Ganesha\n");
+              printf("c)Indra     d) Hanuman\n");
+scanf(" %c",&z);
+assign(z);
+  printf("the winning amount is %d\n",amt);
+          printf("YOUR SECOND QUESTION IS\n");                        
+  printf("Where was the BRICS summit held in 2014?\n");
+              printf("a) Brazil       b) India\n");
+              printf("c) Russia       d) China\n");
+scanf(" %c",&z);
+assign(z);
+  printf("the winning amount is %d\n",amt);
+          printf("YOUR THIRD QUESTION IS\n");                        
+  printf("Which of these terms are used only for women?\n");
+              printf("a)Dirghaayu      b) Chiranjeevi\n");
+              printf("c)Suhagan        d) Sushil\n");
+scanf(" %c",&z);
+assign(z);
+   printf("the winning amount is %d\n",amt);
+           printf("YOUR FOURTH QUESTION IS\n");                        
+  printf("Which of these sports requires you to shout out a word loudly during play?\n");
+              printf("a) Chess      b) Playing cards\n");
+              printf("c) Ludo       d) Kho-Kho \n");
+scanf(" %c",&z);
+assign(z);
+   printf("the winning amount is %d\n",amt);
+            printf("YOUR FIFTH QUESTION IS\n");                        
+  printf("What is the Capital of PUNJAB?\n");
+              printf("a)Chandigarh       b) Hyderabad\n");
+              printf("c) Imphal          d) Shillong\n");
+scanf(" %c",&z);
+assign(z);
+     printf("the winning amount is %d\n",amt);
+            printf("YOUR SIXTH QUESTION IS\n");
+  printf("Which of these battles didn't involve mughal army?\n");
+              printf("a) Battle of buxar       b) Battle of Haldighati\n");
+              printf("c) Second battle of panipat  d) Third battle of panipat\n");
+scanf(" %c",&z);
+assign(z); 
+     printf("the winning amount is %d\n",amt);
+            printf("YOUR SEVENTH QUESTION IS\n");
+  printf("Which of these countries is larger than india in territorial space?\n");
+              printf("a) Australia          b) Argentina\n");
+              printf("c)Kazakhstan          d) Iran\n");
+scanf(" %c",&z);
+assign(z);
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR EIGHTH QUESTION IS\n");
+  printf("Which of these sports has 22 players playing on the field at the same time?\n");
+              printf("a)Cricket       b) Hockey\n");
+              printf("c) Badminton    d) Rugby\n");
+scanf(" %c",&z);
+assign(z);
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR NINTH QUESTION IS\n");
+  printf("What is gulab jamun a type of?\n");
+              printf("a) A flower        b) A fruit\n");
+              printf("c) A tree          d) A sweet\n");
+scanf(" %c",&z);
+assign(z);
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR TENTH QUESTION IS\n");
+  printf("Whose autobiography titled as 'Man of Everest'?\n");
+              printf("a)Sir Edmund Hillary b) George Mallory\n");
+              printf("c) Major HPS Aluhwalia  d) Tenzing Norgay\n");
+scanf(" %c",&z);
+assign(z);
+     printf("the winning amount is %d\n",amt);
+            printf("YOUR ELEVENTH QUESTION IS\n");
+  printf("Where did Homi Jehangir Bhaba die in a plane crash?\n");
+              printf("a) Mont Blanc        b) Monte Rosa\n");
+              printf("c) Mount Ararat      d) Mount Elbrus\n");
+scanf(" %c",&z);
+assign(z);
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR TWELVETH QUESTION IS\n");
+  printf("Which of these is an authentic Goan dessert?\n");
+              printf("a) Kaju Katli      b) Bebinca\n");
+              printf("c) Ghewar          d) Sandesh\n");
+scanf(" %c",&z);
+assign(z);
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR THIRTEENTH QUESTION IS\n");
+  printf("Sunscreen lotion protects our skin against which rays?\n");
+              printf("a) UA       b) UC\n");
+              printf("c) UV       d) UM\n");
+scanf(" %c",&z);
+assign(z); 
+    printf("the winning amount is %d\n",amt);
+            printf("YOUR FOURTEENTH QUESTION IS\n");
+  printf("Which of these actresses hails from Sri Lanka?\n");
+              printf("a) Diana Penty         b)Jacqueline Fernandez\n");
+              printf("c)Amy Jackson          d) Lisa Haydon\n");
+scanf(" %c",&z);
+assign(z);
+printf("the winning amount is %d\n",amt);
+            printf("YOUR FIFTEENTH QUESTION IS\n");
+  printf("Which of these Hindi idioms means to defame someone?\n");
+              printf("a) Keechad Uchhalna    b) Paani Daalna\n");
+              printf("c) Mitti Khodna        d) Rang Lagaana\n");
+scanf(" %c",&z);
+assign(z);
+              printf( "Yeahhhhh!!!!!\n");
+    
+                printf("CONGRATULATION YOU WIN THE GAME\n");
+
+               printf("THE TOTAL WINNING AMOUNT IS %d FOR WINNING PLAYER %s\n",amt,name);
+
+return 0;
+}
+
+void assign(char ch)
+{
+
+if(ch==_ch[i])
+{
+printf("Correct answer\n");
+
+amt=amt+100000;
+i++;
+
+}
+else
+{printf("BETTER LUCK FOR NEXT TIME\a\n");
+exit(0);
+}
+}
+
+
+
